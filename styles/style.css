@@ -1,0 +1,118 @@
+#name_title {
+    font-family: 'Old Standard TT', Georgia, serif;
+	font-size: 60px;
+	font-style: italic;
+}
+
+.custom-link:link, .custom-link:visited, .custom-link:active {
+	text-decoration: none;
+	color: #15253c;
+}
+
+.custom-link:hover {
+	text-decoration: none;
+	color: #cddaed;
+	-webkit-transition:all .2s ease-in-out;
+  	transition:all .2s ease-in-out;
+}
+
+.project a {
+	text-decoration:none;
+  display:inline-block;
+  text-transform:uppercase;
+  color:#ffffff;
+  background-color:#15253c;
+  padding: 10px 15px;
+}
+
+.project a:hover, .project a:active {
+	text-decoration:none;
+	color: #15253c;
+	background-color: #cddaed;
+	-webkit-transition:all .2s ease-in-out;
+  	transition:all .2s ease-in-out;
+}
+
+@media screen and (min-width: 992px) {
+    .navbar {
+        width: 70%;
+    }
+
+    hr {
+        width: 70%;
+    }
+
+	.custom-container {
+		width: 70% !important;
+		padding: 0 !important;
+	}
+
+	.descr-img {
+		width: 75%;
+	}
+}
+ 
+
+hr {
+	border: 1px solid #cddaed !important;
+    opacity: 1 !important;
+}
+
+.custom-hr {
+    width: 33%;
+    border: 1px solid #cddaed !important;
+    opacity: 1 !important;
+}
+
+.navbar {
+	background-color: #cddaed;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navi {
+	text-decoration:none;
+	display:inline-block;
+	text-transform:uppercase;
+	color:#15253c;
+	border:1px solid #cddaed;
+	background-color:#cddaed;
+	padding: 10px 35px;
+}
+
+.navi:hover {
+	text-decoration:none;
+	color: #ffffff;
+	background-color: #15253c;
+	border: 1px solid #cddaed;
+	-webkit-transition:all .2s ease-in-out;
+  	transition:all .2s ease-in-out;
+}
+
+
+.h1 {
+	margin-top: 4.5rem !important;
+	color: #15253c;
+}
+
+.h2
+{
+	font-family: 'Old Standard TT', Georgia, serif;
+	text-transform: uppercase;
+	font-style: italic;
+}
+
+
+.custom-container {
+    margin-top: 2.5rem !important;
+}
+
+
+footer {
+	background-color: #cddaed;
+	position: relative;
+	/* bottom: 0 !important; */
+	width: 100%;
+}

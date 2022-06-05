@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Dianne Ison">
+    <meta name="description" content="My portfolio displaying personal and class projects.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- create new icon -->
+    <!-- <link rel="shortcut icon" href="images/glasses-favicon.png" /> -->
+
+    <!-- styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> -->
+
+    <!-- icons -->
+    <script src="https://kit.fontawesome.com/c4f8fb0e09.js" crossorigin="anonymous"></script>
+
+    <title>Dianne's Portfolio - Maya Snow Study</title>
+
+</head>
+
+<body>
+
+    <!-- <p class="h1 text-center" id="name_title">DIANNE ISON</p> -->
+    <!-- <p class="h1 text-center" id="name_title"><a class="text-decoration-none text-reset" href="index.html">DIANNE ISON</a></p> -->
+    <p class="h1 text-center" id="name_title"><a class="custom-link" href="index.html">DIANNE ISON</a></p>
+    <!-- text-reset inherits the color from its parent -->
+    <hr class="mx-auto">
+
+    <!-- navigation bar -->
+    <nav class="navbar navbar-expand-md mx-auto">
+        <div class="container">
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center text-center" id="navbarNav">
+                <div class="navbar-nav" id="navbar-content">
+                    <a class="navi" href="index.html">PORTFOLIO</a>
+                    <a class="navi" href="about.html">ABOUT</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <hr class="mx-auto">
+ 
+    <!-- breadcrumbs -->
+	<div class="container custom-container">
+		<nav aria-label="breadcrumb">
+			<ol class="breadcrumb " style="background-color: #ffffff;">
+			  <li class="breadcrumb-item"><a href="index.html">PORTFOLIO</a></li>
+			  <li class="breadcrumb-item active" aria-current="page">Maya Snow Study</li>
+			</ol>
+		</nav>
+	</div>
+
+	<!-- actual contents -->
+	<div class="container custom-container">
+		<div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/warm meshers - current.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/warm meshers - close up.png" class="d-block w-100" alt="...">
+                </div>
+                
+            </div>
+
+            <!-- carousel controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div> 
+
+        <hr class="mx-auto mt-5 custom-hr">
+
+		<p class="h2 pt-4">Maya Snow Study - Warm Meshers</p>
+		<p class="text-justify">
+            Another project I worked on in Maya was try to create a small scene based on the promotional photo
+            of the virtual YouTuber unit Meshers. The scene I had in mind was to have cozy snow bunnies snuggling
+            together by a mug and surrounded by a warm scarf. This is all based on the elements from each member of
+            Meshers. One of the main goals of this project was to figure out how to create a snow texture.
+            As I was researching how to create snow in Maya, I was looking for a method that would be less intensive
+            on my laptop. My laptop does not necessarily have the right kind of power to render very intensive things,
+            so this was key in my search.
+        </p>
+
+        <div class="container text-center">
+            <img class="descr-img img-fluid" src="images/meshers ref.png" alt="...">
+            <p class="text-justify fst-italic pt-2">
+                Reference photo pointing out the bunny, scarf, and mug elements that I wanted to incorprate
+            </p>
+        </div>
+
+        <p class="text-justify">
+            The first thing I decided to handle was to create the mug. Once I had the mug model, I had to apply textures, 
+            and in the reference photo, it shows that the mug has a particular logo. I extracted the logo from the reference
+            and created a vector from it using Photoshop. I then took the UV map of the logo and added in the logo vector.
+            It took a few attempts to get the positioning of the logo to be right, but eventually I had it where I wanted it to be.
+        </p>
+
+        <div class="container text-center">
+            <div class="container-md">
+                <img class="img-fluid" src="images/warm meshers - cup logo.png" alt="...">
+            </div>
+            <p class="text-justify fst-italic pt-2">
+                Applying the mug logo on the UV map of the mug model
+            </p>
+        </div>
+
+        <p class="text-justify">
+            The tutorial that I followed showed how to make snow using aiNoise and adjusting the subsurface attribute of the material.
+            aiNoise was used to create a bump map for the material to give texture similar to snow. Additionally, I had to adjust the subsurface
+            attribute since snow is a solid that still allows some light to pass through. Doing this along with adjusting the specularity would 
+            allow for specks of light to catch along the surface. I tested out different settings for the aiNoise as well as the specularity.
+        </p>
+
+        <div class="container text-center">
+            <img class="descr-img img-fluid" src="images/warm meshers - close up.png" alt="...">
+            <p class="text-justify fst-italic pt-2">
+                A close up on the snow bunny
+            </p>
+        </div>
+
+        <p class="text-justify">
+            I liked the effect of the snow that I ended up with. However, I felt like there was something lacking about the snow bunny. 
+            I figured that the surface of the bunny was still too smooth. It does not give off the feeling that it is made from real snow.
+            This would require an additional texture that would slightly change the surface of the bunny model. By doing this, it would 
+            give a more natural look for a bunny made out of snow. 
+        </p>
+
+        <p class="text-justify">
+            When I get the chance, I would like to continue working on this to test out other methods to see what would give me results
+            that I think would fit the look I was going for. Additionally, this piece is still missing the scarf that surrounds the bunnies
+            and the mug. This would require another physics simulation to model the scarf a little easier. And as with each Maya project that I work on, I continue to learn new things 
+            about the program. This allowed me to study how to simulate semi-realistic snow. 
+        </p>
+
+        <p class="h2 pt-3">Technologies Used</p>
+        <ul>
+            <li>Autodesk Maya</li>
+            <li>Photoshop</li>
+        </ul>
+
+    </div>
+
+
+    <!-- footer -->
+    <footer class="footer mt-5 py-3 text-center">
+        <div class="container">
+            <span class="text-muted">&copy; isond 2020</span>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
